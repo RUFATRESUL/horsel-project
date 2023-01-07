@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  background-color: grey;
+  width: 90%;
+  margin: 25px auto;
+  border-radius: 9mm;
+}
+#header .photo {
+  width: 20%;
+}
+#header .nav-menu {
+  width: 60%;
+  justify-content: center;
+}
+#header .nav-menu li {
+  list-style: none;
+  padding: 0 5px;
+}
+#header .nav-menu li.about {
+  position: relative;
+}
+#header .nav-menu li.about:hover .about-dropped {
+  opacity: 1;
+  visibility: visible;
+}
+#header .nav-menu li.about .about-dropped {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: grey;
+  width: 200px;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+#header .nav-menu li.about .about-dropped li {
+  border-bottom: 1px solid lime;
+}
+#header .nav-menu li.about .about-dropped li.horizon-dropped {
+  position: relative;
+}
+#header .nav-menu li.about .about-dropped li.horizon-dropped:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+#header .nav-menu li.about .about-dropped li.horizon-dropped ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: grey;
+  transition: 0.3s ease-in-out;
+  width: 150px;
+}
+#header .nav-menu li.about .about-dropped li a {
+  padding: 15px 20px;
+  border: none;
+}
+#header .nav-menu li:first-child {
+  border-bottom: 3px solid lime;
+}
+#header .nav-menu li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 25px 10px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+#header .nav-menu li a:hover {
+  color: lime;
+}
+#header .nav-menu li a i {
+  margin-left: 10px;
+  font-size: 10px;
+}
+#header .menu-right {
+  text-align: right;
+  width: 20%;
+}
+#header .menu-right a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding-right: 20px;
+}
+#header .menu-right a i {
+  color: lime;
+  margin-right: 10px;
+}/*# sourceMappingURL=style.css.map */
